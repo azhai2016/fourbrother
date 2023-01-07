@@ -1,0 +1,64 @@
+.setup_model {
+    width: 400px;
+    height: 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .4);
+    border-radius: 8px;
+    padding: 1em;
+    padding-top: 0;
+    position: fixed;
+    z-index: 100;
+    background-color: #fff;
+    display: none;
+}
+
+.setup_model .model-body {
+    padding: 5px;
+    text-align: center;
+}
+
+.setup_model .model-header {
+    border-bottom: 1px solid #eaeaea;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+}
+
+.setup_model .model-footer {
+    position: absolute;
+    bottom: 30px;
+    height: 30px;
+    width: 100%;
+    padding: 10px;
+    line-height: 15px;
+    border-top: 1px solid #eaeaea;
+    text-align: center;
+}
+
+.setup_model .close {
+    position: absolute;
+    top: 0;
+    right: 15px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    display: block;
+    color: #666;
+    cursor: pointer;
+}
+
+.setup_model .close:hover {
+    color: #A30D10;
+}
+
+.setup_model .mask {
+    background-color: #000;
+    width: 100%;
+    height: 100%;
+    opacity: .3;
+    filter: alpha(opacity=30);
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 0;
+    display: none;
+}

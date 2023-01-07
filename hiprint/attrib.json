@@ -1,0 +1,18 @@
+[
+    {
+        "tid": "Orders.no",
+        "title": "订单编号订单编号订",
+        "data": "orders.no",
+        "field": "order_no",
+        "textType": "",
+        "type": "text"
+    },
+    {
+        "tid": "Orders.qty",
+        "title": "订单数量",
+        "data": "orders.qty",
+        "field": "order_num",
+        "textType": "",
+        "type": "text"
+    }
+]

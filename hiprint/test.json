@@ -1,0 +1,15 @@
+{
+    "panels": [
+        {
+            "index": 0,
+            "paperType": "A4",
+            "height": 297,
+            "width": 210,
+            "paperHeader": 45,
+            "paperFooter": 780,
+            "printElements": [],
+            "paperNumberLeft": 565,
+            "paperNumberTop": 819
+        }
+    ]
+}

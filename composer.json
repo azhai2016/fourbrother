@@ -1,0 +1,24 @@
+{
+    "name": "bobzhai/fourbrother",
+    "description": "This is fourbrother platforms",
+    "type": "project",
+    "license": "MIT",
+    "homepage": "https://fourborther.com",
+    "authors": [
+        {
+            "name": "Bob Zhai",
+            "email": "support@fourborther.com",
+            "homepage": "http://fourborther.com",
+            "role": "Developer"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "repositories": {},
+    "require": {
+        "php": ">=5.5.0",
+        "nikic/fast-route": "^2.0@dev",
+        "donatj/simplecalendar": "dev-master",
+        "yurunsoft/chinese-util": "dev-master"
+    }
+}
