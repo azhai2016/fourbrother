@@ -55,13 +55,13 @@ $log_path = $path_to_root . '/log/erp.log';
 $log_level = 'debug';
 
 // Main Title
-$app_title = 'FBERP';
+$app_title = '药事通软件';
 
 // Build for development purposes
 $build_version = date('d.m.Y', filemtime($path_to_root . '/CHANGELOG.txt'));
 
 // Powered by
-$power_by = 'FBERP';
+$power_by = '药事通软件';
 $power_url = 'http://fourborther.com';
 
 /* No check on edit conflicts. Maybe needed to be set to 1 in certains Windows Servers */
