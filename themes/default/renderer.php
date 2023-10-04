@@ -87,7 +87,8 @@ class renderer
             'booking' => 'fas fa-check-square-o', 'hospital' => 'fas fa-hospital-o',
             'Projects' => 'fas fa-check-square-o', 'system' => 'fas fa-cog');
 
-            $applications = $_SESSION['App']->applications;
+            $applications = array_reverse($_SESSION['App']->applications);
+            
             $sel_app = $_SESSION['sel_app'];
             echo "<table cellpadding='0' cellspacing='0' width='100%'><tr><td>";
             echo "<div class='tabs collapsible-nav'><center class='collapsible-menu'>";
