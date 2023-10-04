@@ -43,22 +43,21 @@ INSERT INTO `0_printers` VALUES
 
 
 DROP TABLE IF EXISTS `0_printers_json`;
-
 CREATE TABLE `0_printers_json` (
-  `id` tinyint(3) unsigned NOT NULL AUTO_INCREMENT,
-  `bind_id` varchar(20) NOT NULL COMMENT '编号',
-  `mod_id` int NOT NULL COMMENT '模块ID',
-  `name` varchar(20) NOT NULL COMMENT '名称',
-  `description` varchar(100) NOT NULL COMMENT '说明',
-  `json` text NOT NULL COMMENT '模版',
-  `sql_txt` text NOT NULL COMMENT 'SQL文',
-  `sum_field` varchar(20) COMMENT '汇总字段',
-  `field1` varchar(20) COMMENT '备用字段',
-  `inactive` tinyint(1) NOT NULL DEFAULT '0' COMMENT '状态',
-  PRIMARY KEY (`id`),
-  UNIQUE KEY `name` (`name`)
-) ENGINE=InnoDB AUTO_INCREMENT=0;
-
+	`id` tinyint(3) unsigned NOT NULL AUTO_INCREMENT,
+	`bind_id` varchar(20) NOT NULL COMMENT '编号',
+	`mod_id` int NOT NULL COMMENT '模块ID',
+	`name` varchar(20) NOT NULL COMMENT '名称',
+	`description` varchar(100) NOT NULL COMMENT '说明',
+	`json` text NOT NULL COMMENT '模版',
+	`sql_txt` text NOT NULL COMMENT 'SQL文',
+	`sum_field` varchar(20) COMMENT '汇总字段',
+	`jasper_file` varchar(200) COMMENT '设计文件',
+	`field1` varchar(20) COMMENT '备用字段',
+	`inactive` tinyint(1) NOT NULL DEFAULT '0' COMMENT '状态',
+	PRIMARY KEY (`id`),
+	UNIQUE KEY `name` (`name`)
+) ENGINE = InnoDB AUTO_INCREMENT = 0;
 -- 序号记录表  ---------------------------
 
 DROP TABLE IF EXISTS `0_reflines`;
