@@ -331,7 +331,7 @@ function get_pkg_or_list($type = null, $pkgname = null, $filter = array(), $outk
             display_error(_('OpenSSL have to be available on your server to use extension repository system.'));
             return null;
         }
-        if (openssl_verify($data, $sig, $cert) <= 0) {
+        if (isset($sig) && openssl_verify($data, $sig, $cert) <= 0) {
             if ($refresh) {
                 if (!@unlink($loclist)) {
                     display_error(sprintf(_("Cannot delete outdated '%s' file."), $loclist));
