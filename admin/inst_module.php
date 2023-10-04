@@ -211,7 +211,7 @@ if ($Mode == 'Delete') {
 if (get_post('Refresh')) {
 	$comp = get_post('extset');
 	$exts = get_company_extensions($comp);
-    log_b($exts);
+
 	$result = true;
 	foreach($exts as $i => $ext) {
 		if ($ext['package'] && ($ext['active'] ^ check_value('Active'.$i))) {
