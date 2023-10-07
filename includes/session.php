@@ -562,3 +562,5 @@ if (!defined('FA_LOGOUT_PHP_FILE')) {
 
 
 $_POST = strip_quotes($_POST);
+
+add_access_extensions();
